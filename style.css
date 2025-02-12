@@ -1,0 +1,732 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.contanier{
+    width: 1280px;
+    margin: 0 auto;
+}
+header{
+    background: #00096B;
+    padding: 20px;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header .logo{
+      width: 150px;
+}
+.header .logo img{
+    width: 100%;
+}
+.header .right-side{
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.header .right-side h3{
+    color: #fff;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+header hr{
+margin: 20px 0px;
+width: 1px;
+color: #fff;
+width: 100%;
+}
+header .menu ul {
+    display: flex;
+}
+.menu li a{
+    margin: 20px 20px 0px 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.banner{
+    background: url(./Images/banner.png) no-repeat;
+    width: 100%;
+    /* height: 540px; */
+    display: flex;
+    padding: 120px 0px;
+}
+.banner img{
+    object-fit: contain;
+}
+.banner .data{
+
+}
+ .data h1{
+    color: #fff;
+    line-height: 60px;
+    font-size: 32px;
+    width: 50%;
+}
+.data p{
+    color: #fff;
+        font-size: 28px;
+        font-weight: 400;
+        margin-top: 10px;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    /* margin-right: 20px; */  
+}
+.button-1 a{
+    margin-right: 20px;
+    color: #FF6900;
+    border: 1px solid #FF6900;
+ display: inline-block;
+ text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 173px;
+    transition: 0.3s all ease; 
+}
+.button-1 a:hover{
+   background: #FF6900;
+color: #fff;
+}
+.button-2 a{
+    background: #FF6900;
+    color: #fff;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+    width: 173px;
+    display: inline-block;
+    padding: 10px;
+}
+.product{
+    margin-top: -80px;
+}
+
+.product ul{
+    display: flex;
+    justify-content: space-between;
+}
+.product li{
+    padding: 20px 0px 40px 20px;
+    border-radius: 5px;
+  width: calc(25% - 10px);
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
+}
+.product li h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.product li p{
+    margin-top: 10px;
+    width: 90%;         
+font-size: 15px;
+line-height: 20px;
+}
+.mobile{
+    margin-top: 60px;
+}
+h3{
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+}
+.phone ul{
+    display: flex;
+    justify-content: space-between;
+}
+.phone li {
+    width: 32.32%;
+
+    margin-top: 20px;
+    position: relative;
+}
+.overlay{ top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:  rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+.phone li img{
+    width: 100%;
+    display: block;
+}
+
+.phone li h4{
+    position: absolute;
+ bottom: 30px;
+ font-size: 18px;
+ font-weight: 500;
+ color: #fff;
+ left: 20px;
+padding-bottom: 15px;
+}
+.phone li span{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.phone li a{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #FF6900;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+    color: #FF6900;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.phone li a:hover{
+   background: #FF6900;
+   color: #fff;
+}
+.upcoming{
+    margin-top: 60px;
+}
+.upcoming ul{
+    display: flex;
+    justify-content: space-between;
+}
+.upcoming li {
+    width: 24%;
+    margin-top: 20px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 20px;
+}
+.upcoming img{
+padding-left: 40px;
+object-fit:contain ;
+}
+.upcoming .details h3{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+} 
+.details h3{
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.upcoming .details p{
+    font-weight: 400;
+font-size: 15px;
+color: #776677;
+font-weight: 400;
+}
+.button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button img{
+ padding: 0px;
+ width: 65px;
+}
+ .button a{
+    border: 1px solid #FF6900;
+    color: #FF6900;
+    padding: 8px;
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+ }
+ .button a:hover{
+background: #FF6900;
+color: #fff;
+ }
+ .brand{
+    margin-top: 60px;
+ }
+ .brand h3{
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+ }
+.brand ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand li {
+    margin-top: 20px;
+    width: calc(24%-10px);
+background: #fff;
+box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+padding: 40px 93px;
+}
+.comparisons{
+    margin-top: 60px;
+}
+.comparisons h3{
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+}
+.comparisons ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.comparisons li {
+    border-radius: 5px;
+    /* position: relative; */
+    width: 32.33%;
+ /* padding: 20px; */
+    box-shadow: 0px 2px 2px 0 rgba(0,0,0,0.3);
+}
+.comparisons  .against{
+    position: relative;
+    display: flex;
+}
+.comparisons li img{
+    object-fit: cover;
+    padding: 0px;
+    width: 100%; 
+}
+.comparisons li .globe{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, - 50%)
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.3);
+}
+.comparisons li .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}      
+li .text h2{
+    width: 80%;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #323232;
+}   
+li .text p{
+    color: #616161;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.comparisons .compare a{
+    border: 1px solid #FF6900;
+    padding: 8px;
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+    color: #FF6900;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+margin-left: 120px;
+transition: 0.3s;
+}
+.comparisons .compare a:hover{
+  background: #FF6900;
+  color: #fff;
+}
+ .deep{
+    margin-top: 60px;
+ }
+ .deep h3{
+    font-size: 26px;
+    font-weight: 600;
+ }
+.deep ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deep li {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    width: 24%;
+    position: relative;
+}
+.deep li img{
+    width: 100%;
+    display: block;
+}
+.deep li .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;  
+    right: 0;
+    display: block;
+}
+.deep li h4{
+    position: absolute;
+    font-size: 24px;
+    font-weight: 400;
+color: #fff;
+    bottom: 20px;
+    left: 90px;
+}
+footer{
+    background: #2F2F2F;
+    margin-top: 60px;
+    padding: 50px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .coading{
+    width: 30%;
+    margin-top: 20px;
+}
+.footer .coading img{
+    width: 150px;
+}
+.footer .coading p{
+color: #fff;
+font-size: 14px;
+font-weight: 400;
+line-height: 23px;
+margin-top: 10px;
+}
+.footer .page{
+    width: 20%;
+}
+.footer h4{
+    color: #fff;
+    line-height: 36px;
+    font-size: 20px;
+    font-weight: 500;
+}
+ .page li a{
+    margin-top: 90px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+font-weight: 400;
+}
+.touch h5{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.touch img{
+margin-top: 20px;
+}
+.touch .email{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.touch input{
+    margin-top: 20px;
+    width: 260px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A3A3A3;
+    padding: 12px 20px;
+    border-radius: 32px;
+    background-color: #fff;
+    border: none;
+}
+   .touch .email button{
+    margin-left: 20px;
+    margin-top: 25px;
+    padding: 13px;
+    display: block;
+    border-radius: 50px;
+     border: none;
+    width: 110px;
+    text-align: center;
+    color: #fff;
+    background: #22B8F9;
+   }
+   hr{
+    margin-top: 30px;
+    color: #ff0000;
+   }
+   .reserved h5{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 500px;
+   }
+
+   @media screen and (max-width: 767px) {
+    
+    .contanier {
+      width: 100%;
+      padding: 0px 15px;
+    }
+   header .menu{
+    display: none;
+   }
+   
+   .header .right-side {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   .banner {
+    background: url(./Images/banner.png) no-repeat;
+    width: 100%;
+    /* height: 200px; */
+    padding: 120px 30px 120px 20px;
+}
+   .data h1 {
+    color: #fff;
+    line-height: 48px;
+    font-size: 28px;
+    font-weight: 600;
+    width: auto;    
+}
+
+    .data p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .button-1 a {
+        margin-right: 20px;
+        color: #FF6900;
+        border: 1px solid #FF6900;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 130px;
+    }
+
+.button-2 a {
+    background: #FF6900;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 130px;
+    display: inline-block;
+    padding: 10px;
+}
+.product {
+    margin-top: 30px;
+}
+.product ul{
+    display: flex;
+    justify-content: space-between;
+}
+.product ul{
+flex-wrap: wrap;
+}
+.product li {
+   width: calc(50% - 10px);
+   margin-bottom: 20px;
+   padding: 20px 10px 25px 20px;
+}
+.product li h3{
+    font-size: 16px;
+margin-top: 10px;
+}
+.product li p{
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 17px;
+}
+.mobile {
+    margin-top: 10px;
+}
+.mobile h2{
+    font-size: 20px;
+}
+.mobile li {
+    margin-top: 10px;
+}
+.mobile li h4{
+    font-size: 14px;
+    bottom: 15px;
+    left: 10px;
+}
+.mobile li span{
+    font-size: 12px;
+    bottom: 10px;
+    left: 10px;
+}
+.mobile li a{
+    display: none;
+}
+.phone li {
+    width: calc(33.33% - 10px);
+}
+.upcoming{
+    margin-top: 30px;
+}
+.upcoming h3{
+    font-size: 20px;
+}
+.upcoming ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upcoming ul {
+    flex-wrap: wrap;
+}
+.upcoming li {
+    width: calc(50% - 10px);
+}
+.upcoming li img{
+    width: 100px;
+padding-left: 0px;
+}
+.upcoming li a{
+    display: none;
+}
+.upcoming .button img{
+    width: 50px;
+}
+.brand {
+    margin-top: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.brand ul {
+    display: block;
+    padding-bottom: 15px;
+    text-align: center;
+    justify-content: space-between;
+}
+.brand li{
+        width: calc(80% - 20px);
+        display: inline-block;
+        white-space: normal;
+        margin-right: 10px;
+        padding: 40px 20px;
+}
+.brand li img{
+    width: 130px;
+}
+.brand h3{
+    font-size: 20px;
+}
+.comparisons {
+    margin-top: 20px;
+    overflow-x: auto;
+white-space: nowrap;
+}
+.comparisons h3{
+    font-size: 20px;
+}
+.comparisons ul{
+    display: block;
+    padding-bottom: 15px;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.comparisons li {
+    width: calc(80% - 20px);
+    margin-right: 10px;
+    display: inline-block;
+    white-space: normal;
+    /* padding: 40px 20px; */
+}
+.compare {
+    display: none;
+}
+.comparisons li .globe{
+    height: 30px;
+    width: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #272727;
+    position: absolute;
+    left: 43%;
+    top: 32%;       
+}
+.comparisons li  .text{
+    padding: 10px;
+}
+.comparisons li .text h2{
+    font-size: 15px;
+    width: 110px;
+}
+li .text p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.deep{
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.depp ul {
+    display: block;
+    /* padding-bottom: 15px;*/
+    text-align: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.deep li{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: calc(50% - 10px);
+    display: inline-block;
+    white-space: normal;
+}
+.deep li h4{
+    left: 0 ;
+    text-align: center;
+    font-size: 15px;
+}
+.deep h3{
+    font-size: 20px;
+}
+   }
